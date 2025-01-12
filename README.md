@@ -13,3 +13,7 @@ Understanding REST API (Representational State Transfer) as an architectural sty
 -Interaction with the database to serve data in a structured format (typically JSON).
 
 Defining the structure and relationships of data in MongoDB Verifying user identity before allowing access to specific resources.
+
+Milestone 2 Overview
+
+We Started working on the frontend by making a login page with the help of React and styling the login page using tailwind css.
