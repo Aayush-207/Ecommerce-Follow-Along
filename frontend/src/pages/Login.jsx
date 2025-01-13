@@ -1,5 +1,8 @@
-import React, { useState } from "react";
-// import axios from "axios";
+
+import { useState } from "react";
+
+import axios from "axios";
+
 
 
 
@@ -28,8 +31,8 @@ function LoginPage() {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-12">
-      <div className="w-full max-w-md space-y-8 bg-white p-8 rounded-xl shadow-lg">
+    <div className="flex min-h-screen items-center justify-center bg-gray-70">
+      <div className="w-full max-w-md space-y-8 bg-gray-100 p-8 rounded-xl shadow-lg">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-gray-800">Sign in to your account</h2>
         </div>
@@ -44,6 +47,7 @@ function LoginPage() {
               id="email"
               autoComplete="email"
               required
+              placeholder="Enter your Email address"
               value={credentials.email}
               onChange={handleChange}
               className="w-full mt-2 px-4 py-3 border rounded-lg shadow-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
@@ -59,6 +63,7 @@ function LoginPage() {
               id="password"
               autoComplete="password"
               required
+              placeholder="Enter your password"
               value={credentials.password}
               onChange={handleChange}
               className="w-full mt-2 px-4 py-3 border rounded-lg shadow-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
