@@ -1,5 +1,16 @@
 const express = require("express");
 const app = express();
+const user = require("./controller/userController");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const errorHandler = require("./middleware/error");
+const error = require("./middleware/error")
+
+app.use(errorHandler);
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+app.use(cors());
+app.use("/a[i/v2/user", user);
 
 if(process.env.NODE_EMV !== "PRODUCTION"){
     require("dotenv").config({

@@ -1,16 +1,25 @@
 const express = require("express");
 const path = require("path")
-
 const User = require("..model/user");
 const router = express.Router();
 const {upload} = require("../multer");
 const ErrorHandler = require("../utils/ErrorHandler");
+const catchAsyncErrors = require("./catchAsyncErrors");
+const jwt = require("jsonwebtoken");
+const sendMail = required("../utils/sendMail");
 
 
 router.post("/register", upload.single("image"), async (req, res, next) => {
     const { name, email, password } = req.body;
     const userEmail = await User.findOne({ email });
     if (userEmail) {
+        const filename = req.file.filename;
+        const filepath = `../uploads/${filename}`;
+        fs.unlinkSync(filepath, (err) => {
+            if (err) {
+                console.log(err);
+            }
+        });
         return next(new ErrorHandler("User already exist", 400));
     }
 const filename = req.file.filename;
