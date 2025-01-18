@@ -16,8 +16,6 @@ const SignupPage = () => {
   const handleFileSubmit = (e) => {
     const file = e.target.files[0];
     if (file) {
-      const filePath = URL.createObjectURL(file);
-      console.log("File path: ", filePath);
       setAvatar(file);
     }
   };
@@ -34,7 +32,6 @@ const SignupPage = () => {
     const config = {
       headers: {
         "Content-type": "multipart/form-data",
-        Accept: "any",
       },
     };
 
