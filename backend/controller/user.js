@@ -52,5 +52,41 @@ router.post("/create-user", upload.single("file"), catchAsyncErrors( async (req,
     res.status(201).json({ success : true , user });
 }));
 
+router.post("/login-user", catchAsyncErrors(async (req, res, next) => {
+    console.log("login user");
+    let { email, password } = req.body;
+    email = email;
+    password=password;
+
+    if (!email || !password) {
+        return next(new ErrorHandler("Please enter email and password", 400));
+    }
+
+    const user_authen = await User.findOne({ email }).select("+password");
+
+    if (!user_authen) {
+        console.log("User not found with the given emial");
+        return next(new ErrorHandler("Invalid email or password", 401));
+    }
+    const isPasswordMatched = await bcrypt.compare(password, user_authen.password);
+    console.log("Password matched", isPasswordMatched);
+    console.log("At Auth - password:", password, "Hash:", user_authen.password);
+
+    if (!isPasswordMatched) {
+        console.log("Password not matched");
+        return next(new ErrorHandler("Invalid email or password", 401));
+    }
+
+    res.status(200).json({
+        success: true,
+        message: "User logged in successfully",
+        user: {
+            id: user_authen._id,
+            email: user_authen.email,
+            name: user_authen.name,
+        },
+    });
+}))
+
 
 module.exports = router;
