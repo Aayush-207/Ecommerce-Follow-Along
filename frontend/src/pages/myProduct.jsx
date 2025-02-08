@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../components/Products';
 
-export default function Home() {
+export default function MyProduct() {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -51,3 +51,4 @@ export default function Home() {
         </div>
     );
 }
+
