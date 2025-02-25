@@ -107,4 +107,8 @@ In this milestone we simply implemented the logic for login and signup , that is
 In this milestone we simply created the frontend part for the HomePage of our Website , And also learned how to route it.
 
 ## Milestone 9: Project Overview - 
+<<<<<<< HEAD
 In this milestone we simply created the frontend part for the createproductpage of our Website , And also learned how to create products.
+=======
+In this milestone we simply created the frontend part for the createproductpage of our Website , And also learned how to create products.
+>>>>>>> 393f025623bcf36bbf8c9ee6de350720af87fa05
