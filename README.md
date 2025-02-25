@@ -1,73 +1,110 @@
-Milestone 1 Overview
+# E--commerce-website
 
-Introduction to the MERN stack (MongoDB, Express.js, React, Node.js) and explanation of why it's favored for its JavaScript-only approach, which streamlines development and is newbie-friendly.
+****
+## Milestone 1: Project Overview-
 
-Understanding REST API (Representational State Transfer) as an architectural style for building web services and building various API endpoints for:
+In this milestone, we demonstrated the working of MERN Stack. And by using the MERN stack we are going to bulid an e-commerce website
 
--User Authentication: Register and log in users.
+Which is,
 
--Product Management: Add, update, and retrieve product data.
+**M - MongoDB** - Used to handle databases
 
--Order Handling: Manage customer orders.
+**E - Express.js** -  Used to easily handle severs
 
--Interaction with the database to serve data in a structured format (typically JSON).
+**R - React.js** - Used for frontedend
 
-Defining the structure and relationships of data in MongoDB Verifying user identity before allowing access to specific resources.
+**N - Node.js** - Used with express.js for server handling
+
+### **Project Features :- **
+
+#### **Pages**
+1. **Authentication**
+   - Login / Signup functionality.
+   - User validation and session management.
+
+2. **Product Page**
+   - Displays all available products.
+   - Allows users to view product details.
+
+3. **Orders Page**
+   - Lists all orders made by the user.
+   - Displays order history and details.
+
+4. **Payment Gateway**
+   - Integrates a secure payment system.
+   - Handles transactions seamlessly.
+****
 
 
-Milestone 2 Overview
+
+## Milestone 2: Project Overview - 
+
+In this milestone we learned how to setup a development enviroment for a backend project and also started with making Basic UI for Login page.-
+
+Key Learnings - 
+
+- Learned tailwind css for login page UI
+- Learned to setup basic tools used in backend like -
+  -  express
+  -  mongoose
+  -  dotenv
+  -  nodemon
+  -  cookie-parser
+  -  nodemailer etc...
+- And learned Basic react Routing.
+
+****
 
 
-We Started working on the frontend by making a login page with the help of React and styling the login page using tailwind css.
+## Milestone 3: Project Overview - 
+
+In this milestone we have learned how to setup basic backend configurations - 
+
+Key learnings -
+
+- Learned how to use express js.
+- Learned how to use the mongodb database and connect it with our server code.
+- Learned to use jsonWebTokens for authentications.
+- And finally learned to effectively handle the errors.
 
 
-Milestone 3: Backend Setup
+## Milestone 4: Project Overview -
+
+In this milestone we learned the following things -
+
+Key learnings - 
+
+- We learned how to use mongoose schema
+- We learned how to install and use multer
+- We learned password hashing using bcrypt
+- And lastly we learned about usage of jsonWebTokens for authentication.
+
+## Milestone 5: Project Overview - 
+
+In this milestone we focused on creating a signup page for new users visiting the website,
+
+Key Learnings - 
+
+- We Learned how to create the UI for the Signup page using React and Tailwind CSS.
+- We also learned how to use RegEx (Regular expressions) for the validation of the inputs on the signup page.
 
 
-Backend Structure:
+## Milestone 6: Project Overview -
 
-Created a clean folder hierarchy for the backend project (routes, controllers, models, middleware).
-Set up a Node.js server with Express to handle API requests.
-MongoDB Integration:
+Key Learnings -
 
-Integrated MongoDB to store data efficiently, and tested the connection for CRUD operations.
-Error Handling:
+- We learned how to encrytp the password and store it in the database (Hashing) , Using the Bcrypt package.
+- We also learned how to store data of new users inside the database.
 
-Implemented basic error handling for better debugging and user feedback.
 
-Milestone 5: React Signup Page
+## Milestone 7: Project Overview - 
 
-Features:
+In this milestone we simply implemented the logic for login and signup , that is if the user already exists in the database then only he/she will be able to login.
 
-User Input Fields: Captured user data such as Full Name, Email, and Password.
-Password Visibility Toggle: Provided users with an option to toggle password visibility.
-Avatar Upload: Enabled users to upload an avatar image.
-Form Submission: Form handles multipart/form-data for file uploads and integrates with the backend (via Axios).
-Tech Stack:
 
-React
-React Icons
-Axios for API requests
-Tailwind CSS for styling
-Setup:
+## Milestone 8: Project Overview - 
 
-Install the necessary dependencies:
-npm install react-icons axios
-Milestone 6: Password Encryption
-Why Encrypting Passwords?
+In this milestone we simply created the frontend part for the HomePage of our Website , And also learned how to route it.
 
-Protect User Data: Password encryption prevents exposure in case of a security breach.
-Privacy: Ensures passwords are not visible to unauthorized individuals.
-Compliance: Meets security standards like GDPR and PCI-DSS.
-Stops Password Theft: Encrypted passwords are harder to steal or guess.
-Tasks Completed:
-
-Milestone 6: Password Encryption:
-
-Implemented bcrypt to hash passwords during signup.
-Ensured hashed passwords are stored in the database instead of plain text.
-Storing Complete User Data:
-
-Saved user information, including name, email, and other details, while keeping the password secure.
-
-Milestone 7: today we created a working login and signup page
+## Milestone 9: Project Overview - 
+In this milestone we simply created the frontend part for the createproductpage of our Website , And also learned how to create products.

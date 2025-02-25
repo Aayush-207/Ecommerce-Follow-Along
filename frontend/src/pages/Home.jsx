@@ -1,52 +1,45 @@
-//eslint-disable-next-line
-import React, { useEffect, useState } from 'react';
-import Product from '../components/Products';
-
+import { useEffect, useState } from "react";
+import Product from "../components/products.jsx";
+import Navbar from '../components/nav.jsx'
 export default function Home() {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:8000/api/v2/product/get-products')
+        fetch('http://localhost:8000/api/v2/product/get-products') // Fix URL
             .then((res) => {
                 if (!res.ok) {
-                    throw new Error(`Network response was not ok: ${res.status}`);
+                    throw new Error(`Error fetching products: ${res.status}`);
                 }
                 return res.json();
             })
             .then((data) => {
-                console.log("📦 API Response:", data);
-                if (!data.products) {
-                    throw new Error("API response does not contain 'products'");
-                }
-                setProducts(data.products);
+                setProducts(data.product || []); // Ensure we access `product` correctly
                 setLoading(false);
             })
             .catch((err) => {
-                console.error("❌ Error fetching products", err);
                 setError(err.message);
                 setLoading(false);
             });
     }, []);
 
+    if (loading) {
+        return <div className="text-center pt-6 pb-5 text-white mt-10">Loading...</div>;
+    }
+
+    if (error) {
+        return <div className="text-center pt-6 pb-5 text-red-500 mt-10">Error: {error}</div>;
+    }
+
     return (
-        <div className="w-full min-h-screen bg-gray-800 p-6">
-            <h1 className="text-3xl text-center text-white py-6">Product List</h1>
-
-            {loading && <p className="text-white text-center">Loading...</p>}
-            {error && <p className="text-red-500 text-center">Error: {error}</p>}
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {products.length > 0 ? (
-                    products.map((product) => (
-                        <Product key={product._id || product.id} {...product} />
-                    ))
-                ) : (
-                    !loading && !error && (
-                        <p className="text-center text-white">No products found.</p>
-                    )
-                )}
+        <div className="w-full min-h-screen bg-neutral-700">
+            <Navbar/>
+            <h1 className="text-3xl font-bold text-gray-800">Product Gallery</h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 p-4">
+                {products.map(product => (
+                    <Product key={product._id} {...product} />
+                ))}
             </div>
         </div>
     );
