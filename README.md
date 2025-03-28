@@ -107,8 +107,257 @@ In this milestone we simply implemented the logic for login and signup , that is
 In this milestone we simply created the frontend part for the HomePage of our Website , And also learned how to route it.
 
 ## Milestone 9: Project Overview - 
-<<<<<<< HEAD
+
 In this milestone we simply created the frontend part for the createproductpage of our Website , And also learned how to create products.
-=======
+
 In this milestone we simply created the frontend part for the createproductpage of our Website , And also learned how to create products.
->>>>>>> 393f025623bcf36bbf8c9ee6de350720af87fa05
+
+Milestone 10: Product Schema and Endpoint Creation
+🎯 Goals
+Define a Mongoose schema for storing product data.
+Implement API endpoint for adding products to MongoDB.
+Ensure data validation and error handling for integrity.
+Why Create a Product Schema and API?
+Structured Data Storage: Organize product details in MongoDB.
+Validation & Security: Prevent invalid data entries.
+Scalability: Enable future expansions like categories and stock tracking.
+Steps
+1. Define Mongoose Schema
+Create a schema with necessary fields:
+name (String, required)
+description (String, optional)
+price (Number, required, positive values only)
+imageUrl (String, optional, URL format validation)
+Use Mongoose models to interact with MongoDB.
+2. Build API Endpoint
+Create a POST endpoint (/api/products) to store product data.
+Implement request validation before database storage.
+Use express-validator for additional validation.
+3. Handle Errors & Maintain Data Integrity
+Validate incoming requests and return meaningful errors.
+Ensure only properly formatted data is stored.
+📝 Next Steps:
+Implement role-based access control (RBAC) for product uploads.
+Expand schema to include categories, stock status, and user-specific listings.
+Submission Details
+Code pushed to GitHub repository.
+Repository is publicly accessible.
+Milestone 11: Dynamic Home Page with Product Data
+🎯 Goals
+Implement a dynamic home page displaying all products from MongoDB.
+Develop a backend API endpoint to fetch product data.
+Render products dynamically on the frontend using a reusable component.
+Why Implement a Dynamic Home Page?
+Real-Time Updates: Ensures users see the latest products.
+Reusability: Uses a common product card component.
+Seamless Data Flow: Fetches and displays data efficiently.
+Steps
+1. Backend API Development
+Created an API endpoint to retrieve product data from MongoDB.
+Ensured data is formatted and sent as a JSON response.
+2. Frontend Data Fetching & Rendering
+Implemented a function to fetch product data from the backend.
+Passed the received data to the product card component.
+Integrated product listing into the home page.
+📝 Submission Details:
+Code pushed to GitHub repository.
+Repository is publicly accessible.
+Milestone 12: "My Products" Page Implementation
+🎯 Goals
+Develop a "My Products" page for users to view their added products.
+Create an API endpoint to fetch user-specific products.
+Dynamically render products using a reusable component.
+Why Implement a "My Products" Page?
+Personalized Experience: Displays user-specific products.
+Improved Accessibility: Users can manage their product listings easily.
+Optimized API Calls: Fetches only relevant data based on the user's email.
+Steps
+1. Backend API Development
+Created an API endpoint to retrieve products based on the user's email.
+Ensured efficient querying of the products collection.
+2. Frontend Data Fetching & Display
+Implemented a function to fetch user-specific products from the backend.
+Updated state to reflect retrieved products dynamically.
+Used the existing product card component for consistent UI.
+📝 Submission Details:
+Code pushed to GitHub repository.
+Repository is publicly accessible.
+This milestone enhances the application by providing users with a personalized view of their added products. 🚀
+
+Here’s your text converted to the same structured style:
+
+Milestone 13: Edit Uploaded Products 🌟
+🎯 Learning Goals
+By the end of this milestone, you will learn:
+
+How to write an endpoint to update existing data in MongoDB.
+How to auto-fill a form with previous product data for editing.
+Features Added
+✅ Edit Button – Added to each product card, allowing users to modify product details.
+✅ Auto-fill Form – Populates with current product data for easy editing.
+✅ Update Endpoint – Created a backend route to update product details in MongoDB.
+
+Steps for Implementation 📝
+1️⃣ Backend: Update Endpoint
+Developed an API endpoint to receive and process updated product data.
+Used Mongoose to locate and modify the corresponding product in the database.
+2️⃣ Frontend: Edit Form Integration
+Added an edit button to each product card.
+Implemented a pre-filled form that opens when the edit button is clicked.
+Integrated a save button to submit changes and trigger the update request.
+How to Use
+1️⃣ Navigate to the product list.
+2️⃣ Click the edit button on the product you wish to update.
+3️⃣ Modify the details in the auto-filled form.
+4️⃣ Click save to update the product information.
+
+Milestone 14: Delete Functionality Implementation 🗑️
+🎯 Learning Outcomes
+Developed a DELETE API endpoint to remove products by ID.
+Integrated a delete button into the frontend for easy removal.
+Ensured smooth user feedback with error handling.
+Implementation Details
+1️⃣ Backend: Delete Endpoint
+Created a DELETE route (/api/products/:id).
+Used Mongoose to find and delete products by ID.
+2️⃣ Frontend: Delete Button
+Added a delete button to each product card.
+Configured it to send a DELETE request to the backend.
+3️⃣ Error Handling & UX Improvements
+Managed errors for invalid or non-existent product IDs.
+Planned confirmation dialogs to prevent accidental deletions.
+Introduced role-based access control for delete permissions.
+📝 Next Steps
+🚀 Implement confirmation dialogs before deletion.
+📢 Add notifications to inform users about deletion status.
+🔐 Enhance role-based access control for security.
+
+Milestone 15: Navbar Component 🚀
+🎯 Key Learning Outcomes
+✅ Created a reusable Navbar component.
+✅ Integrated navigation across multiple pages:
+
+🏠 Home
+📦 My Products
+➕ Add Product
+🛒 Cart
+✅ Ensured responsive design for all screen sizes.
+This milestone enhances user experience by providing seamless navigation. 🎯
+
+Milestone 16: Product Info Page 📄
+🎯 Learning Goals
+✅ Developed a product information page for detailed product views.
+✅ Implemented a quantity selector for user purchases.
+✅ Added an "Add to Cart" button to enable shopping.
+
+This milestone allows users to view product details and add items to their cart seamlessly.
+
+Milestone 17: Add to Cart Functionality 🛒
+🎯 Key Updates
+✅ Updated User Schema to store cart products.
+✅ Created a Cart Schema to manage cart items.
+✅ Developed an API Endpoint to receive and store products in the cart.
+
+This milestone improves cart functionality and strengthens database integration for e-commerce applications.
+
+Milestone 18: Fetch Cart Items 🛍️
+🎯 Key Updates
+✅ Created an API Endpoint to handle cart item requests.
+✅ Implemented functionality to fetch products using the user’s email.
+✅ Enhanced cart functionality by allowing users to view selected products.
+
+With this update, users can now see their selected products in their cart, improving the shopping experience. 🚀
+
+Milestone 19: Cart Functionality
+Overview
+In this milestone, we implemented the cart functionality by creating a frontend UI for the cart page and developing backend endpoints to manage product quantities within the cart.
+
+Learning Goals 🎯
+By completing this milestone, we:
+
+Created a cart page to display products inside the cart using the endpoint built in Milestone 18.
+Implemented an option to increase and decrease the quantity of each product using + and - buttons.
+Developed backend endpoints to handle quantity adjustments for products in the cart.
+Implementation Details
+Frontend:
+Created a dedicated Cart Page to display all products added to the cart.
+Implemented dynamic UI components to show product details, prices, and quantity controls.
+Added + and - buttons to allow users to adjust the quantity of each product.
+Integrated API calls to fetch and update cart data dynamically.
+Backend:
+Created API endpoints to increase and decrease the quantity of a product in the cart.
+Updated the database to reflect changes in product quantities.
+Implemented validation checks to prevent negative quantities.
+How to Test
+Navigate to the cart page and verify that products appear correctly.
+Use the + and - buttons to adjust the quantity and observe real-time updates.
+Check the API responses to ensure correct updates to the database.
+Ensure the UI reflects changes made to the cart without requiring a page refresh.
+Conclusion
+With this milestone, we have successfully implemented a dynamic shopping cart system that allows users to manage product quantities seamlessly. This enhances user experience and lays the foundation for further enhancements like checkout functionality.
+
+🎉 Milestone 19 Completed! 🚀
+
+Milestone 20: Profile Page & User Data Endpoint
+Overview
+In this milestone, we implemented a profile page frontend and created a backend endpoint to retrieve user data.
+
+Key Features
+Backend Endpoint: Sends user data via email.
+Profile Page Frontend: Displays user details including profile photo, name, and email.
+Address Section:
+Shows user addresses.
+Displays "No address found" if no addresses exist.
+Includes an "Add Address" button for adding new addresses.
+This milestone enhances user profile management by integrating backend data retrieval and frontend rendering. 🚀
+
+Milestone 21: Address Input Form
+Overview
+In this milestone, we created a frontend page for address input that allows users to enter and store their address details. The form includes fields for country, city, address lines, zip code, and address type.
+
+Learning Goals 🎯
+By completing this milestone, you have:
+
+Created a frontend form to collect address details.
+Implemented state management to store the input address.
+Set up navigation from the profile page to the address form page.
+Gained a deeper understanding of handling user inputs in forms.
+Features
+User Input Fields:
+Country
+City
+Address Line 1
+Address Line 2
+Zip Code
+Address Type (Home/Work/Other)
+State Management:
+The form data is stored in a state to handle user input dynamically.
+Navigation:
+Clicking "Add Address" on the profile page navigates to the address form page.
+Validation:
+Ensures required fields are filled before submission.
+Conclusion
+This milestone helped in understanding how to create a structured address input form, manage state effectively, and enable seamless navigation within a React application.
+
+Milestone 22: Address Storage Endpoint
+Overview
+In this milestone, we created a backend endpoint that receives the address details from the frontend and stores them inside the user's profile in the database.
+
+Learning Goals 🎯
+By completing this milestone, you have:
+
+Created a backend endpoint to handle address data.
+Implemented logic to add the address to the address array inside the user collection.
+Understood how to handle API requests and database updates.
+Features
+Endpoint Creation:
+Receives address data from the frontend form.
+Validates the address input before storing it.
+Database Integration:
+Adds the address to the address array in the user collection.
+Ensures the user profile is updated correctly.
+Error Handling:
+Returns appropriate responses for success or failure cases.
+Conclusion
+This milestone helped in understanding how to create and integrate a backend API that stores user addresses in the database. The knowledge gained will be useful for handling user profiles dynamically in future projects.
+
