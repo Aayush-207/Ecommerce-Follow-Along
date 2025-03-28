@@ -1,6 +1,6 @@
 //eslint-disable-next-line
 import React, { useEffect, useState } from 'react';
-import Product from '../components/Products';
+import Product from '../components/products';
 
 export default function MyProduct() {
     const [products, setProducts] = useState([]);

@@ -12,10 +12,15 @@ const App = () => {
       <Route path="/" element={<Home/>}></Route>
       <Route path="/product" element={<CreateProduct/>}/>
       <Route path="/product/:id" element={<CreateProduct/>}/>
-        <Route path="/myproduct" element={<MyProduct/>}/>
+        <Route path="/myProduct" element={<MyProduct/>}/>
       <Route path='/cart' element={<Cart/>}/>
-      <Route path='/product/info/:id' element={<ProductDetails/>}/>
+      <Route path='/productDetails' element={<ProductDetails/>}/>
       <Route path='/profile' element={<Profile/>}/>
+      <Route path='/CreateAdress' element={<Profile/>}/>
+      <Route path='/selectAdresses' element={<Profile/>}/>
+      <Route path='/orderConfirmation' element={<Profile/>}/>
+      <Route path='/myOrder' element={<Profile/>}/>
+
     </Routes>
     </BrowserRouter>  
   )
