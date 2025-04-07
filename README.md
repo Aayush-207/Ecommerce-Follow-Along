@@ -504,3 +504,46 @@ On clicking the Cancel Order button, send a request to the backend.
 Update the UI to reflect the canceled order status.
 🎯 Conclusion
 This milestone enhances the My Orders page by allowing users to cancel their orders when needed. It helps in understanding how to modify order statuses and manage data updates dynamically.
+
+## Milestone 29: PayPal Payment Gateway Integration ✅
+🌟 Overview
+In this milestone, I successfully integrated the PayPal payment gateway into my application, allowing users to choose between Cash on Delivery (COD) and online payment via PayPal.
+
+🎯 What I Accomplished
+By completing this milestone, I:
+
+Successfully implemented the PayPal API.
+Enabled secure online payments within the application.
+Provided users with a seamless choice between COD and PayPal payment.
+🛠 Implementation Steps
+1️⃣ Set Up PayPal Developer Account
+Created a developer account on the PayPal Developer Dashboard.
+Set up a Sandbox Account for testing transactions.
+Retrieved and saved the User ID and Client ID from PayPal for API integration.
+2️⃣ Added Payment Options to Order Confirmation Page
+Implemented radio buttons for payment selection:
+Cash on Delivery (COD)
+Online Payment via PayPal
+Configured PayPal buttons to dynamically appear when the Online Payment option is selected.
+3️⃣ Successfully Integrated PayPal Payments
+Ensured PayPal payment buttons display correctly.
+Connected the application to PayPal’s API for secure transactions.
+Successfully processed test transactions in sandbox mode.
+📌 Features Implemented
+✅ Sandbox test account setup ✅ PayPal Client ID configuration ✅ Payment selection with radio buttons ✅ Dynamic rendering of PayPal buttons ✅ Secure online payment integration
+
+🚀 Conclusion
+With this milestone, I have successfully enabled PayPal online payments in my application. Users can now securely complete their transactions, enhancing the overall shopping experience. 🎉
+
+
+
+## 💳 Milestone 30: PayPal Payment Integration
+In this milestone, we integrated online payments using the PayPal API! 💥
+After setting up our sandbox account and getting the User ID in Milestone 29, we moved forward by:
+
+Installing the react-paypal-js package
+Using PayPalScriptProvider to enable smooth payment options like credit and debit cards 💸
+Seamlessly connecting our app with PayPal using the client key 🔑
+This update brings us one step closer to real-world e-commerce capabilities! 🚀
+
+📘 Refer to the official PayPal ReactJS documentation for deeper implementation guidance.
