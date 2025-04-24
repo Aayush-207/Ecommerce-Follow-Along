@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import Nav from "../components/nav";
 import { useNavigate} from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const SelectAddress = () => {
     const [addresses, setAddresses] = useState([]);
@@ -8,12 +9,14 @@ const SelectAddress = () => {
     const [error, setError] = useState(null);
     const navigate = useNavigate();
 
-    const userEmail = 'dips@gmail.com';
+    const userEmail = useSelector((state) => state.user.email);
 
     useEffect(() => {
         const fetchAddresses = async () => {
             try {
-                const response = await fetch(`http://localhost:8000/api/v2/user/addresses?email=${'dips@gmail.com'}`);
+                const response = await fetch('http://localhost:8000/api/v2/user/addresses' , {
+                    params: {email: userEmail},
+                });
 
 
                 if(!response.ok) {
