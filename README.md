@@ -112,7 +112,7 @@ In this milestone we simply created the frontend part for the createproductpage 
 
 In this milestone we simply created the frontend part for the createproductpage of our Website , And also learned how to create products.
 
-Milestone 10: Product Schema and Endpoint Creation
+## Milestone 10: Product Schema and Endpoint Creation
 🎯 Goals
 Define a Mongoose schema for storing product data.
 Implement API endpoint for adding products to MongoDB.
@@ -142,7 +142,7 @@ Expand schema to include categories, stock status, and user-specific listings.
 Submission Details
 Code pushed to GitHub repository.
 Repository is publicly accessible.
-Milestone 11: Dynamic Home Page with Product Data
+## Milestone 11: Dynamic Home Page with Product Data
 🎯 Goals
 Implement a dynamic home page displaying all products from MongoDB.
 Develop a backend API endpoint to fetch product data.
@@ -162,7 +162,7 @@ Integrated product listing into the home page.
 📝 Submission Details:
 Code pushed to GitHub repository.
 Repository is publicly accessible.
-Milestone 12: "My Products" Page Implementation
+## Milestone 12: "My Products" Page Implementation
 🎯 Goals
 Develop a "My Products" page for users to view their added products.
 Create an API endpoint to fetch user-specific products.
@@ -186,7 +186,7 @@ This milestone enhances the application by providing users with a personalized v
 
 Here’s your text converted to the same structured style:
 
-Milestone 13: Edit Uploaded Products 🌟
+## Milestone 13: Edit Uploaded Products 🌟
 🎯 Learning Goals
 By the end of this milestone, you will learn:
 
@@ -211,7 +211,7 @@ How to Use
 3️⃣ Modify the details in the auto-filled form.
 4️⃣ Click save to update the product information.
 
-Milestone 14: Delete Functionality Implementation 🗑️
+## Milestone 14: Delete Functionality Implementation 🗑️
 🎯 Learning Outcomes
 Developed a DELETE API endpoint to remove products by ID.
 Integrated a delete button into the frontend for easy removal.
@@ -244,7 +244,7 @@ Milestone 15: Navbar Component 🚀
 ✅ Ensured responsive design for all screen sizes.
 This milestone enhances user experience by providing seamless navigation. 🎯
 
-Milestone 16: Product Info Page 📄
+## Milestone 16: Product Info Page 📄
 🎯 Learning Goals
 ✅ Developed a product information page for detailed product views.
 ✅ Implemented a quantity selector for user purchases.
@@ -252,7 +252,7 @@ Milestone 16: Product Info Page 📄
 
 This milestone allows users to view product details and add items to their cart seamlessly.
 
-Milestone 17: Add to Cart Functionality 🛒
+## Milestone 17: Add to Cart Functionality 🛒
 🎯 Key Updates
 ✅ Updated User Schema to store cart products.
 ✅ Created a Cart Schema to manage cart items.
@@ -260,7 +260,7 @@ Milestone 17: Add to Cart Functionality 🛒
 
 This milestone improves cart functionality and strengthens database integration for e-commerce applications.
 
-Milestone 18: Fetch Cart Items 🛍️
+## Milestone 18: Fetch Cart Items 🛍️
 🎯 Key Updates
 ✅ Created an API Endpoint to handle cart item requests.
 ✅ Implemented functionality to fetch products using the user’s email.
@@ -268,7 +268,7 @@ Milestone 18: Fetch Cart Items 🛍️
 
 With this update, users can now see their selected products in their cart, improving the shopping experience. 🚀
 
-Milestone 19: Cart Functionality
+ ## Milestone 19: Cart Functionality
 Overview
 In this milestone, we implemented the cart functionality by creating a frontend UI for the cart page and developing backend endpoints to manage product quantities within the cart.
 
@@ -296,9 +296,9 @@ Ensure the UI reflects changes made to the cart without requiring a page refresh
 Conclusion
 With this milestone, we have successfully implemented a dynamic shopping cart system that allows users to manage product quantities seamlessly. This enhances user experience and lays the foundation for further enhancements like checkout functionality.
 
-🎉 Milestone 19 Completed! 🚀
+## 🎉 Milestone 19 Completed! 🚀
 
-Milestone 20: Profile Page & User Data Endpoint
+ ## Milestone 20: Profile Page & User Data Endpoint
 Overview
 In this milestone, we implemented a profile page frontend and created a backend endpoint to retrieve user data.
 
@@ -311,7 +311,7 @@ Displays "No address found" if no addresses exist.
 Includes an "Add Address" button for adding new addresses.
 This milestone enhances user profile management by integrating backend data retrieval and frontend rendering. 🚀
 
-Milestone 21: Address Input Form
+## Milestone 21: Address Input Form
 Overview
 In this milestone, we created a frontend page for address input that allows users to enter and store their address details. The form includes fields for country, city, address lines, zip code, and address type.
 
@@ -339,7 +339,7 @@ Ensures required fields are filled before submission.
 Conclusion
 This milestone helped in understanding how to create a structured address input form, manage state effectively, and enable seamless navigation within a React application.
 
-Milestone 22: Address Storage Endpoint
+## Milestone 22: Address Storage Endpoint
 Overview
 In this milestone, we created a backend endpoint that receives the address details from the frontend and stores them inside the user's profile in the database.
 
@@ -360,4 +360,272 @@ Error Handling:
 Returns appropriate responses for success or failure cases.
 Conclusion
 This milestone helped in understanding how to create and integrate a backend API that stores user addresses in the database. The knowledge gained will be useful for handling user profiles dynamically in future projects.
+
+# Milestone 23: Place Order & Select Address
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Add a "Place Order" button inside the cart.
+Create a "Select Address" page displaying all available addresses for selection.
+Implement a Mongoose schema for storing order details.
+Develop a backend endpoint to fetch all user addresses.
+Implementation Steps 📝
+Frontend:
+Add "Place Order" Button:
+
+Implement a button inside the cart page that redirects users to the "Select Address" page.
+Create "Select Address" Page:
+
+Display all saved addresses of the user.
+Provide an option to select one address for delivery.
+Backend:
+Create an Endpoint to Fetch User Addresses:
+
+Implement a route that retrieves all stored addresses for a user.
+Write Mongoose Order Schema:
+
+Store essential order details, including selected address, products, total price, and user ID.
+Expected Outcome 📌
+Users can navigate from the cart to the "Select Address" page.
+Users can choose an address before placing an order.
+The backend successfully retrieves stored addresses and saves order details.
+This milestone enhances the e-commerce experience by allowing users to finalize their delivery details efficiently.
+
+## Milestone 24: Order Confirmation Page
+Welcome to Milestone 24! 🌟
+In this milestone, we created an order confirmation page in the frontend where we display the ordered products, selected address, and total price details.
+
+Learning Goals 🎯
+By the end of this milestone, we have:
+
+Created an order confirmation page.
+Displayed ordered products dynamically.
+Implemented address selection and display.
+Calculated and showed the total cart value.
+Implemented a "Place Order" button to complete the order process.
+Steps for Milestone 24 📝
+Displayed all the products the user is ordering.
+Showed the selected delivery address.
+Displayed the total value of the cart.
+Added a "Place Order" button at the bottom to confirm the order.
+Completion Note:
+The order confirmation page has been successfully implemented, providing users with a clear overview of their order details before placing it.
+
+## Milestone 25: Place Order Endpoint
+🚀 Introduction
+Welcome to Milestone 25! In this milestone, we have implemented a backend endpoint that allows users to place orders. This functionality ensures that each product in the order is processed separately while sharing the same address details.
+
+🎯 Learning Goals
+By completing this milestone, you will:
+
+Develop a backend endpoint for placing an order.
+Retrieve user details using their email.
+Store order details in the MongoDB orders collection using the predefined schema.
+📝 Implementation Steps
+Create the Order Endpoint: Develop an API endpoint that accepts user details, address, and product information.
+Retrieve User ID: Extract the user's email from the request and use it to find the corresponding _id from the users collection.
+Process Each Product Separately: For every product in the request, create a separate order while maintaining the same address.
+Store Orders in MongoDB: Use the existing Order schema to save order details in the orders collection.
+Here’s an improved version of your README update with better clarity and grammar:
+
+🏆 Milestone 26: Create Backend Endpoint for Placing Orders
+Hey Kalvians! 👋
+
+## Welcome to Milestone 26! 🌟
+
+🎯 Learning Goals
+By the end of this milestone, you will:
+
+✅ Create a backend endpoint to retrieve all orders of a user.
+
+📝 Steps for Milestone 26
+Create an endpoint that receives the user's email.
+Use the email to retrieve the _id of the user from the database.
+Fetch all orders associated with that _id.
+Send the retrieved orders as a response.
+This lesson will help you understand how to fetch all orders for a specific user in your backend.
+
+## Milestone 27: Implementing the My Orders Page for Seamless Order Tracking
+📦 My Orders Page
+
+🌟 Overview
+
+The My Orders page allows users to view all their past and ongoing orders in one place. This page fetches order details from the backend and displays them in an organized manner.
+
+✨ Features
+
+🔄 Fetch and display all user orders by making a GET request to the /my-orders endpoint.
+
+📧 Orders are retrieved based on the user's email.
+
+📋 Orders are presented in a user-friendly format.
+
+🏠 Integrated into the navigation bar for easy access.
+
+📝 Implementation Steps
+
+🖥 Create the My Orders Page
+
+Develop a React component to display user orders.
+
+📡 Fetch User Orders
+
+Send a GET request to the /my-orders endpoint.
+
+Pass the user’s email to retrieve their orders.
+
+📑 Display Orders
+
+Format and show the fetched data in a structured layout.
+
+🔗 Add Page to Navbar
+
+Ensure smooth navigation by linking the My Orders page in the navbar.
+
+## Milestone 28: ❌ Cancel Order Feature
+🌟 Overview
+The Cancel Order feature allows users to cancel their placed orders. This involves updating both the frontend and backend to support order cancellation.
+
+✨ Features
+🛑 Add a Cancel Order button next to each active order on the My Orders page.
+🚫 The cancel button will be hidden for orders that are already canceled.
+🔄 Create a backend endpoint to handle order cancellation.
+✅ Update the order status to "Canceled" in the database.
+📝 Implementation Steps
+🖥 Update My Orders Page
+Add a Cancel Order button next to each order.
+Hide the button for orders that are already canceled.
+🔧 Create Cancel Order Endpoint
+Develop a new POST endpoint: /cancel-order.
+Receive orderId in the request payload.
+Fetch the order using this ID, update its status to "Canceled," and save it.
+🔄 Integrate API with Frontend
+On clicking the Cancel Order button, send a request to the backend.
+Update the UI to reflect the canceled order status.
+🎯 Conclusion
+This milestone enhances the My Orders page by allowing users to cancel their orders when needed. It helps in understanding how to modify order statuses and manage data updates dynamically.
+
+## Milestone 29: PayPal Payment Gateway Integration ✅
+🌟 Overview
+In this milestone, I successfully integrated the PayPal payment gateway into my application, allowing users to choose between Cash on Delivery (COD) and online payment via PayPal.
+
+🎯 What I Accomplished
+By completing this milestone, I:
+
+Successfully implemented the PayPal API.
+Enabled secure online payments within the application.
+Provided users with a seamless choice between COD and PayPal payment.
+🛠 Implementation Steps
+1️⃣ Set Up PayPal Developer Account
+Created a developer account on the PayPal Developer Dashboard.
+Set up a Sandbox Account for testing transactions.
+Retrieved and saved the User ID and Client ID from PayPal for API integration.
+2️⃣ Added Payment Options to Order Confirmation Page
+Implemented radio buttons for payment selection:
+Cash on Delivery (COD)
+Online Payment via PayPal
+Configured PayPal buttons to dynamically appear when the Online Payment option is selected.
+3️⃣ Successfully Integrated PayPal Payments
+Ensured PayPal payment buttons display correctly.
+Connected the application to PayPal’s API for secure transactions.
+Successfully processed test transactions in sandbox mode.
+📌 Features Implemented
+✅ Sandbox test account setup ✅ PayPal Client ID configuration ✅ Payment selection with radio buttons ✅ Dynamic rendering of PayPal buttons ✅ Secure online payment integration
+
+🚀 Conclusion
+With this milestone, I have successfully enabled PayPal online payments in my application. Users can now securely complete their transactions, enhancing the overall shopping experience. 🎉
+
+
+
+## 💳 Milestone 30: PayPal Payment Integration
+In this milestone, we integrated online payments using the PayPal API! 💥
+After setting up our sandbox account and getting the User ID in Milestone 29, we moved forward by:
+
+Installing the react-paypal-js package
+Using PayPalScriptProvider to enable smooth payment options like credit and debit cards 💸
+Seamlessly connecting our app with PayPal using the client key 🔑
+This update brings us one step closer to real-world e-commerce capabilities! 🚀
+
+📘 Refer to the official PayPal ReactJS documentation for deeper implementation guidance.
+
+## 🌟 Milestone 31: Managing Global State with Redux
+Welcome to Milestone 31!
+In this task, I explored how to handle global state in a React application using Redux.
+
+🎯 What I Learned
+Setting up Redux in a React project
+Creating a Redux store to manage global state
+Writing and dispatching actions
+Accessing global state across different components
+2. Created the Store Folder
+I made a new folder called store and added two files inside it:
+
+store.js — to define and configure the Redux store
+userActions.js — to handle user-related actions
+3. Configured the Redux Store
+4. Wrote the Action Function
+5. Connected Redux to the App
+📌 Highlight
+The Redux store now holds the user email as global state, which can be accessed or updated from any component in the app. Super useful for things like login systems, dashboards, or user profiles.
+
+✅ Done and Dusted!
+This milestone helped me understand the core idea of global state and how Redux fits into the picture. Looking forward to building more complex state flows using this setup!
+
+Let me know if you’d like a version with code examples using useSelector and useDispatch next!
+
+Absolutely! Here’s your updated README with a more personal and engaging tone using "I did" throughout:
+
+## 🌟 Milestone 32: Going Global with Redux! 🌍
+Welcome to Milestone 32 — a major step forward in making my app smarter and more connected using Redux for global state management. Let’s dive into what I did! 💪
+
+🚀 What I Did
+In this milestone, I:
+
+Used Redux to store the user’s email globally
+Accessed the stored email across multiple pages
+Learned how to use dispatch to update state and useSelector to retrieve it
+Took a big leap in mastering global state management in React
+🛠️ How I Did It
+1️⃣ Stored the Email from Login Page
+2️⃣ Accessed the Email Anywhere
+💡 What I Learned
+By doing this, I understood:
+
+How to avoid prop drilling
+How Redux helps in managing data across the app
+The value of a centralized state for a seamless user experience
+🎉 Mission Accomplished!
+With Milestone 32 completed, I’ve added another powerful tool to my React toolkit. Managing global state with Redux? ✅ Done and dusted!
+
+## Milestone 33: Creating and Storing JWT Tokens Securely
+🔐 JWT Authentication with Cookies
+
+🌟 Overview
+
+This milestone introduces the core of secure user authentication—generating JWT tokens and storing them in cookies. You'll learn how to safely manage user sessions by embedding tokens in HTTP-only cookies after a successful login.
+
+✨ Features
+
+🔐 Generate a JWT token using user email and ID.
+⏳ Set an expiration time using the maxAge property.
+🍪 Store the token securely in a browser cookie.
+🛡️ Enables secure user authentication for future requests.
+
+📝 Implementation Steps
+
+📦 Install JWT Package
+Use NPM to install jsonwebtoken for creating and signing tokens.
+
+🖊 Create a JWT Token
+Utilize the sign method to generate a token with user details (email and ID).
+
+⏰ Set Expiration
+Define token lifespan by setting maxAge during token creation.
+
+📬 Send Token in Cookie
+Use res.cookie() to embed the JWT token in an HTTP-only cookie for secure storage in the browser.
+
+🚀 Next Steps
+These foundational steps set the stage for building protected routes and user-specific features using the stored token for authentication.
+
 
