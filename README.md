@@ -547,3 +547,85 @@ Seamlessly connecting our app with PayPal using the client key 🔑
 This update brings us one step closer to real-world e-commerce capabilities! 🚀
 
 📘 Refer to the official PayPal ReactJS documentation for deeper implementation guidance.
+
+## 🌟 Milestone 31: Managing Global State with Redux
+Welcome to Milestone 31!
+In this task, I explored how to handle global state in a React application using Redux.
+
+🎯 What I Learned
+Setting up Redux in a React project
+Creating a Redux store to manage global state
+Writing and dispatching actions
+Accessing global state across different components
+2. Created the Store Folder
+I made a new folder called store and added two files inside it:
+
+store.js — to define and configure the Redux store
+userActions.js — to handle user-related actions
+3. Configured the Redux Store
+4. Wrote the Action Function
+5. Connected Redux to the App
+📌 Highlight
+The Redux store now holds the user email as global state, which can be accessed or updated from any component in the app. Super useful for things like login systems, dashboards, or user profiles.
+
+✅ Done and Dusted!
+This milestone helped me understand the core idea of global state and how Redux fits into the picture. Looking forward to building more complex state flows using this setup!
+
+Let me know if you’d like a version with code examples using useSelector and useDispatch next!
+
+Absolutely! Here’s your updated README with a more personal and engaging tone using "I did" throughout:
+
+## 🌟 Milestone 32: Going Global with Redux! 🌍
+Welcome to Milestone 32 — a major step forward in making my app smarter and more connected using Redux for global state management. Let’s dive into what I did! 💪
+
+🚀 What I Did
+In this milestone, I:
+
+Used Redux to store the user’s email globally
+Accessed the stored email across multiple pages
+Learned how to use dispatch to update state and useSelector to retrieve it
+Took a big leap in mastering global state management in React
+🛠️ How I Did It
+1️⃣ Stored the Email from Login Page
+2️⃣ Accessed the Email Anywhere
+💡 What I Learned
+By doing this, I understood:
+
+How to avoid prop drilling
+How Redux helps in managing data across the app
+The value of a centralized state for a seamless user experience
+🎉 Mission Accomplished!
+With Milestone 32 completed, I’ve added another powerful tool to my React toolkit. Managing global state with Redux? ✅ Done and dusted!
+
+## Milestone 33: Creating and Storing JWT Tokens Securely
+🔐 JWT Authentication with Cookies
+
+🌟 Overview
+
+This milestone introduces the core of secure user authentication—generating JWT tokens and storing them in cookies. You'll learn how to safely manage user sessions by embedding tokens in HTTP-only cookies after a successful login.
+
+✨ Features
+
+🔐 Generate a JWT token using user email and ID.
+⏳ Set an expiration time using the maxAge property.
+🍪 Store the token securely in a browser cookie.
+🛡️ Enables secure user authentication for future requests.
+
+📝 Implementation Steps
+
+📦 Install JWT Package
+Use NPM to install jsonwebtoken for creating and signing tokens.
+
+🖊 Create a JWT Token
+Utilize the sign method to generate a token with user details (email and ID).
+
+⏰ Set Expiration
+Define token lifespan by setting maxAge during token creation.
+
+📬 Send Token in Cookie
+Use res.cookie() to embed the JWT token in an HTTP-only cookie for secure storage in the browser.
+
+🚀 Next Steps
+These foundational steps set the stage for building protected routes and user-specific features using the stored token for authentication.
+
+
